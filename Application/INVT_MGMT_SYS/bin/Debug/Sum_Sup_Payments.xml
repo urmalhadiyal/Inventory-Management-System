@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table1>
+    <ID>1</ID>
+    <Supplier_x0020_Name>Apple Inc.</Supplier_x0020_Name>
+    <Total_x0020_Pur._x0020_Amt.>605000.00</Total_x0020_Pur._x0020_Amt.>
+    <Total_Paid_Amt>205000.00</Total_Paid_Amt>
+    <Closing_x0020_Balance>400000</Closing_x0020_Balance>
+  </Table1>
+</NewDataSet>

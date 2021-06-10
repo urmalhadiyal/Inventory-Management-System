@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{568BAF75-DA9A-4B85-9632-E64CD49519E2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>INVT_MGMT_SYS</RootNamespace>
+    <AssemblyName>INVT_MGMT_SYS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connection.cs" />
+    <Compile Include="CR_Stock.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR_Stock.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CR_Sum_Cust_Recipe.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR_Sum_Cust_Recipe.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CR_Sum_Sup_payments.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR_Sum_Sup_payments.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frm_Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Customers.Designer.cs">
+      <DependentUpon>frm_Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Master.Designer.cs">
+      <DependentUpon>frm_Master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Order_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Order_List.Designer.cs">
+      <DependentUpon>frm_Order_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Order_Master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Order_Master.Designer.cs">
+      <DependentUpon>frm_Order_Master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Payment.Designer.cs">
+      <DependentUpon>frm_Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Product_master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Product_master.Designer.cs">
+      <DependentUpon>frm_Product_master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Product_Types.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Product_Types.Designer.cs">
+      <DependentUpon>frm_Product_Types.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PurchaseMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PurchaseMaster.Designer.cs">
+      <DependentUpon>frm_PurchaseMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Purchase_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Purchase_List.Designer.cs">
+      <DependentUpon>frm_Purchase_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_recipes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_recipes.Designer.cs">
+      <DependentUpon>frm_recipes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SalesMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_SalesMaster.Designer.cs">
+      <DependentUpon>frm_SalesMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Sales_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Sales_List.Designer.cs">
+      <DependentUpon>frm_Sales_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Stock_Mgmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Stock_Mgmt.Designer.cs">
+      <DependentUpon>frm_Stock_Mgmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Summry_Cust_Recipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Summry_Cust_Recipe.Designer.cs">
+      <DependentUpon>frm_Summry_Cust_Recipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Summry_Sup_Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Summry_Sup_Payment.Designer.cs">
+      <DependentUpon>frm_Summry_Sup_Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Suppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Suppliers.Designer.cs">
+      <DependentUpon>frm_Suppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_transport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_transport.Designer.cs">
+      <DependentUpon>frm_transport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT_InvoiceSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT_InvoiceSales.Designer.cs">
+      <DependentUpon>RPT_InvoiceSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CR_Invoice_Sales.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR_Invoice_Sales.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RPT_Summry_Cust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT_Summry_Cust.Designer.cs">
+      <DependentUpon>RPT_Summry_Cust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT_Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT_Stock.Designer.cs">
+      <DependentUpon>RPT_Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT_Summry_Sup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT_Summry_Sup.Designer.cs">
+      <DependentUpon>RPT_Summry_Sup.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CR_Stock.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR_Stock.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Sum_Cust_Recipe.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR_Sum_Cust_Recipe.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Sum_Sup_payments.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR_Sum_Sup_payments.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Customers.resx">
+      <DependentUpon>frm_Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Master.resx">
+      <DependentUpon>frm_Master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Order_List.resx">
+      <DependentUpon>frm_Order_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Order_Master.resx">
+      <DependentUpon>frm_Order_Master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Payment.resx">
+      <DependentUpon>frm_Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Product_master.resx">
+      <DependentUpon>frm_Product_master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Product_Types.resx">
+      <DependentUpon>frm_Product_Types.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PurchaseMaster.resx">
+      <DependentUpon>frm_PurchaseMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Purchase_List.resx">
+      <DependentUpon>frm_Purchase_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_recipes.resx">
+      <DependentUpon>frm_recipes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SalesMaster.resx">
+      <DependentUpon>frm_SalesMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Sales_List.resx">
+      <DependentUpon>frm_Sales_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Stock_Mgmt.resx">
+      <DependentUpon>frm_Stock_Mgmt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Summry_Cust_Recipe.resx">
+      <DependentUpon>frm_Summry_Cust_Recipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Summry_Sup_Payment.resx">
+      <DependentUpon>frm_Summry_Sup_Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Suppliers.resx">
+      <DependentUpon>frm_Suppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_transport.resx">
+      <DependentUpon>frm_transport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_InvoiceSales.resx">
+      <DependentUpon>RPT_InvoiceSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Invoice_Sales.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR_Invoice_Sales.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_Summry_Cust.resx">
+      <DependentUpon>RPT_Summry_Cust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_Stock.resx">
+      <DependentUpon>RPT_Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT_Summry_Sup.resx">
+      <DependentUpon>RPT_Summry_Sup.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IMG\download.jfif" />
+    <Content Include="IMG\images.jfif" />
+    <None Include="Resources\21.png" />
+    <None Include="Resources\303-3032186_accounting-icon-product.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

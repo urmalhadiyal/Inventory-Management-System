@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table1>
+    <Product_x0020_ID>1</Product_x0020_ID>
+    <Product_x0020_Name>i-Phone X</Product_x0020_Name>
+    <Purchase_x0020_Qty.>8</Purchase_x0020_Qty.>
+    <Sales_x0020_Qty>2</Sales_x0020_Qty>
+    <Stock_x0020_Qty.>6</Stock_x0020_Qty.>
+  </Table1>
+  <Table1>
+    <Product_x0020_ID>4</Product_x0020_ID>
+    <Product_x0020_Name>Macbook Air</Product_x0020_Name>
+    <Purchase_x0020_Qty.>5</Purchase_x0020_Qty.>
+    <Sales_x0020_Qty>1</Sales_x0020_Qty>
+    <Stock_x0020_Qty.>4</Stock_x0020_Qty.>
+  </Table1>
+</NewDataSet>

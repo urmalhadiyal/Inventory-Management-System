@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <Sales_ID>1</Sales_ID>
+    <Pro_Name>Macbook Air</Pro_Name>
+    <Qty>1</Qty>
+    <SL_Rate>95000</SL_Rate>
+    <S_TOTAL>95000</S_TOTAL>
+    <Sales_Date>2019-09-25T00:00:00+05:30</Sales_Date>
+    <Sales_InvNo>IMS_SI_1</Sales_InvNo>
+    <Cust_Name>Poojara Telecome</Cust_Name>
+    <Sales_Qty>2</Sales_Qty>
+    <Sales_TotAmt>150000.00</Sales_TotAmt>
+    <Sales_PayType>Debit</Sales_PayType>
+  </Table>
+  <Table>
+    <Sales_ID>1</Sales_ID>
+    <Pro_Name>i-Phone X</Pro_Name>
+    <Qty>2</Qty>
+    <SL_Rate>27500</SL_Rate>
+    <S_TOTAL>55000</S_TOTAL>
+    <Sales_Date>2019-09-25T00:00:00+05:30</Sales_Date>
+    <Sales_InvNo>IMS_SI_1</Sales_InvNo>
+    <Cust_Name>Poojara Telecome</Cust_Name>
+    <Sales_Qty>2</Sales_Qty>
+    <Sales_TotAmt>150000.00</Sales_TotAmt>
+    <Sales_PayType>Debit</Sales_PayType>
+  </Table>
+</NewDataSet>

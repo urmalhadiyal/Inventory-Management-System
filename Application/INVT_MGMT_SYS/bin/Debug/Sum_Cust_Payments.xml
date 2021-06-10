@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table1>
+    <ID>1</ID>
+    <Customer_x0020_Name>Poojara Telecome</Customer_x0020_Name>
+    <Total_x0020_Sales_x0020_Amt.>150000.00</Total_x0020_Sales_x0020_Amt.>
+    <Total_x0020_Recipe_x0020_Amt.>50000.00</Total_x0020_Recipe_x0020_Amt.>
+    <Closing_x0020_Balance>100000</Closing_x0020_Balance>
+  </Table1>
+</NewDataSet>
